@@ -14,7 +14,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- jQuery cdn -->
-    <script src="jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
     <!-- custom css -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -30,10 +30,11 @@
             type="text"
             class="form-control"
             placeholder="Search for a Movie"
-            id="movie-search-box"
-            onkeyup="findMovies()"
-            onclick="findMovies()"
+            id="search-box"
           />
+          <button type="submit" class="btn btn-primary" id="submit" onclick="window.location.reload();">
+              Search
+          </button>
 
           <div class="search-list" id="search-list">
             <!-- list here -->
@@ -50,7 +51,9 @@
       </div>
       <!-- end of result container -->
     </div>
-
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!-- js file -->
     <script src="script.js"></script>
   </body>
